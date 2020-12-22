@@ -1,0 +1,9 @@
+TODO:
+  ✔ move contents to `src` directory @done(20-12-21 16:28)
+  ☐ create pages
+  ☐ slugify links
+
+LINKS:
+  ☐ https://nextjs.org/docs/basic-features/typescript#custom-app
+  ☐ https://medium.com/swlh/create-a-killer-frontend-for-2020-setup-next-js-graphql-styled-components-typescript-and-ssr-fe66cffd7d94
+  ☐ [fix TSX prettier](https://github.com/microsoft/vscode/issues/108447#issuecomment-707236252)
