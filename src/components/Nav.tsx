@@ -6,14 +6,16 @@ import { useWindowResize } from '../hooks'
 import { useAppContext } from '../state'
 import { StyledNav } from '../styles'
 import { slugify } from '../utils'
+import { Shroud } from '.'
 
 const Nav = () => {
   const { navOpen, setNavOpen } = useAppContext()!
 
+  const navBreak = 1024
   const windowSize = useWindowResize()
 
   useEffect(() => {
-    if (windowSize.width < 1024) setNavOpen(false)
+    if (windowSize.width < navBreak) setNavOpen(false)
   }, [windowSize])
 
   useEffect(() => {
@@ -21,18 +23,14 @@ const Nav = () => {
     return () => clearTimeout(t)
   }, [{ navOpen }])
 
-  useEffect(() => {
-    if (navOpen) {
-      if (windowSize.width < 1024) document.body.style.overflow = 'hidden'
-      else document.body.style.overflow = 'visible'
-    } else document.body.style.overflow = 'visible'
-  }, [navOpen, windowSize])
-
   return (
     <>
       <StyledNav className={navOpen ? 'is-open' : ''}>
         <nav aria-label="Main">
           <ul>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
             {pages.map(page => (
               <li key={uuidv4()}>
                 {page.title}
@@ -48,11 +46,10 @@ const Nav = () => {
           </ul>
         </nav>
       </StyledNav>
-      <div
-        className="shroud"
-        hidden={navOpen ? false : true}
-        onClick={() => setNavOpen(false)}
-      />
+
+      {navOpen && windowSize.width < navBreak && (
+        <Shroud open={navOpen} setOpen={setNavOpen} />
+      )}
     </>
   )
 }

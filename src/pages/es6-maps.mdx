@@ -1,0 +1,131 @@
+import { Layout } from '../components/'
+
+export const meta = {
+  path: '/es6-sets',
+  date: '2020-12-21',
+  title: 'ES6 Maps',
+  titleSlug: 'es6-maps',
+  thumbnail: 'javascript.png',
+}
+
+Similar to Set, Map can also be declared in the same fashion.
+
+```javascript
+const map = new Map()
+```
+
+Adding and Removing Elements from Map The Map supports the object-like key-value pairs. Therefore, when adding value, we need to provide a key as well.
+
+This is different from what we saw with the Set.
+
+```javascript
+const map = new Map()
+map.set('Name', 'iPhone') // map.set(key,value) format
+map.set('Brand', 'Apple')
+map.set('Price', '$1000')
+```
+
+To remove a value from the Map, we can simply pass the key into the `.delete()` property.
+
+```javascript
+const map = new Map()
+map.set('Name', 'iPhone')
+map.set('Brand', 'Apple')
+map.set('Price', '$1000')
+map.delete('Price') //removes the element with key 'Price'
+```
+
+Like Set, we can use `.clear()` to remove all the elements.
+
+```javascript
+map.clear() // removes all the element
+```
+
+### Size of Map
+
+The size (length) of the map can easily be retrieved using the `.size` property.
+
+```javascript
+const map = new Map()
+map.set('Name', 'iPhone')
+map.set('Brand', 'Apple')
+map.set('Price', '$1000')
+console.log(map.size) //=> 3
+```
+
+### Accessing Elements in Map
+
+The Map provides us with a `.get()` method to quickly get the value by passing the key as an argument in the method.
+
+```javascript
+const map = new Map()
+map.set('Name', 'iPhone')
+map.set('Brand', 'Apple')
+map.set('Price', '$1000')
+console.log(map.get('Name')) //iPhone
+console.log(map.get('Brand')) // Apple
+```
+
+But what if you want only the keys, values, or both key and value?
+
+Map has `.keys()` ,`.values()` and `.entries()` respectively for achieving the same.
+
+Using the same map from the code above,
+
+```javascript
+console.log(map.keys())
+// iterator {'Name','Brand',Price'}
+console.log(map.values())
+// iterator {'iPhone','Apple','$1000'}
+console.log(map.entries())
+//iterator {'Name':'iPhone','Brand':'Apple',Price':'$1000'}
+```
+
+Iterating over the map is also quite simple.
+
+```javascript
+//with for-each
+map.forEach((value, key) => {
+  console.log(`${key} is ${value} years old!`)
+})
+
+// with for-of
+for (const [key, value] of map) {
+  console.log(`${key} : ${value}`)
+}
+```
+
+Moreover, you can easily check if an element exists or not using `.has()` property and passing the key.
+
+```javascript
+var map = new Map()
+map.set('age', 19)
+console.log(map.has('age')) // true since 'age' key is present
+```
+
+Converting Object into a Map
+
+If you decide to convert your object to a map, JavaScript has got you covered. We have earlier used `.entries()` to get all the key-value pairs but this time we are gonna use the method on Object .
+
+```javascript
+const myObject = {
+  Age: '25',
+  Gender: 'Male',
+  Nationality: 'Australian',
+}
+
+const myMap = new Map(Object.entries(myObject)) //object to map
+const anotherObject = Object.fromEntries(myMap) // map to object
+```
+
+You can easily convert a map to an object as well as shown above.
+
+To convert the map into an array we can use the Array.from(myMap).
+
+### Map vs Array & Objects
+
+The Map seems to solve a lot of shortcomings of the array and objects such as able to handle much more complex operations. The Map is like a hybrid of array and objects. It has a size property like array and can store elements in a key-value pair format. Besides this, it also provides methods to like `.has()` to check if an element exists or not which can save you a ton of time. Moreover, it does not necessarily need the key to be of String type. You can even use an object as a key that can help you write better code.
+
+[MDN Map Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map).
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>

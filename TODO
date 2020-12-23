@@ -1,7 +1,8 @@
 TODO:
   ✔ move contents to `src` directory @done(20-12-21 16:28)
   ☐ create pages
-  ☐ slugify links
+  ✔ slugify links @done(20-12-23 09:03)
+  ☐ clean github gists
 
 LINKS:
   ☐ https://nextjs.org/docs/basic-features/typescript#custom-app

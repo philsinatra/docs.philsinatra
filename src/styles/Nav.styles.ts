@@ -59,6 +59,7 @@ const StyledNav = styled.div`
             font-weight: normal;
             padding: 0.5rem 0.75rem;
             text-decoration: none;
+            transition: background-color var(--duration-100) ease-in-out;
 
             &:hover,
             &:focus {

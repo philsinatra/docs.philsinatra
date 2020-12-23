@@ -65,6 +65,7 @@ const GlobalStyles = createGlobalStyle`
     --color-gray-700: #a2a2a2;
     --color-gray-800: #c8c8c8;
     --color-gray-900: #efefef;
+    --color-gray-1000: #fafafa;
     --color-white: #fff;
     --duration-100: 130ms;
     --duration-200: 160ms;
@@ -75,18 +76,18 @@ const GlobalStyles = createGlobalStyle`
       0px 8px 10px 1px rgba(0, 0, 0, 0.14),
       0px 3px 14px 2px rgba(0, 0, 0, 0.12);
 
-    --primary-background: var(--color-white);
+    --primary-background: var(--color-gray-1000);
     --primary-foreground: var(--color-gray-50);
     --secondary-background: var(--color-gray-900);
     --secondary-foreground: var(--color-gray-50);
-    --highlight: hsla(109, 0%, 78%, .5);
+    --highlight: hsla(0, 0%, 78%, .350);
 
     @media screen and (prefers-color-scheme: dark) {
-      --primary-background: var(--color-gray-200);
+      --primary-background: var(--color-gray-75);
       --primary-foreground: var(--color-gray-900);
-      --secondary-background: var(--color-gray-300);
+      --secondary-background: var(--color-gray-100);
       --secondary-foreground: var(--color-gray-900);
-      --highlight: hsla(109, 0%, 29%, 1.000);
+      --highlight: var(--color-gray-200);
     }
   }
 
@@ -127,10 +128,6 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-  }
-
   i, em {
     font-style: italic;
   }
@@ -150,20 +147,6 @@ const GlobalStyles = createGlobalStyle`
     overflow: hidden;
     position: absolute;
     width: 1px;
-  }
-
-  .shroud {
-    background-color: hsla(0, 0%, 0%, .8);
-    height: 100vh;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    z-index: 100;
-
-    @media screen and (min-width: 64em) {
-      display: none;
-    }
   }
 `
 

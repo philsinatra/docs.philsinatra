@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import menuIcon from '@iconify/icons-tabler/menu'
+import { Icon } from '@iconify/react'
 import { useAppContext } from '../state'
 
 const Header = () => {
@@ -7,7 +9,9 @@ const Header = () => {
 
   return (
     <StyledHeader>
-      <button onClick={() => setNavOpen(true)}>menu</button>
+      <button onClick={() => setNavOpen(true)}>
+        <Icon icon={menuIcon} style={{ fontSize: '36px' }} />
+      </button>
     </StyledHeader>
   )
 }
@@ -28,6 +32,31 @@ const StyledHeader = styled.header`
 
   @media screen and (min-width: 64em) {
     display: none;
+  }
+
+  button {
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    transition: background-color var(--duration-100) ease-in-out;
+    width: 2rem;
+
+    &:hover {
+      background-color: var(--highlight);
+      cursor: pointer;
+    }
+
+    &:focus {
+      background-color: var(--highlight);
+    }
+
+    svg {
+      color: var(--primary-foreground);
+      transform: scale(1.2);
+    }
   }
 `
 

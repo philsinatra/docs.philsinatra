@@ -8,8 +8,10 @@ const StyledMain = styled.main`
   justify-content: flex-start;
   min-height: 100vh;
   padding-top: 6rem;
+  width: 100vw;
 
   .wrapper {
+    line-height: 1.4;
     margin: 0 auto;
     max-width: 85ch;
     padding: 0 3rem;

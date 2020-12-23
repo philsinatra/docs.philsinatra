@@ -1,9 +1,8 @@
-import { Main, Nav } from './'
-import React, { useEffect } from 'react'
-
-import { Header } from './'
 import Prism from 'prismjs'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
+import { Main, Nav } from './'
+import { Header } from './'
 
 const Layout = ({ children }) => {
   useEffect(() => {
