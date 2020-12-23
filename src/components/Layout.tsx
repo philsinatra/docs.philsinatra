@@ -1,10 +1,32 @@
-import React from 'react'
+import { Main, Nav } from './'
+import React, { useEffect } from 'react'
 
-const Layout = ({ children }) => (
-  <>
-    <main>{children}</main>
-  </>
-)
+import { Header } from './'
+import Prism from 'prismjs'
+import styled from 'styled-components'
+
+const Layout = ({ children }) => {
+  useEffect(() => {
+    if (typeof window !== undefined) Prism.highlightAll()
+  }, [])
+
+  return (
+    <>
+      <Wrapper>
+        <Header />
+        <Nav />
+        <Main>{children}</Main>
+      </Wrapper>
+    </>
+  )
+}
+
+const Wrapper = styled.div`
+  @media screen and (min-width: 64em) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+`
 
 export default Layout
 

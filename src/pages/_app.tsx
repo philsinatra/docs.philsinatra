@@ -1,12 +1,16 @@
-import type { AppProps } from 'next/app';
+import '../styles/prism.css'
+
+import type { AppProps } from 'next/app'
+import { AppProvider } from '../state'
 import GlobalStyles from '../styles/GlobalStyles'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <AppProvider>
       <GlobalStyles />
       <Component {...pageProps} />
-    </>)
+    </AppProvider>
+  )
 }
 
 // Only uncomment this method if you have blocking data requirements for
@@ -21,4 +25,4 @@ function MyApp({ Component, pageProps }: AppProps) {
 //   return { ...appProps }
 // }
 
-export default MyApp;
+export default MyApp

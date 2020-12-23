@@ -1,49 +1,83 @@
 {
   "pages": [
-    "11ty",
-    "Apache htaccess",
-    "Blackboard LMS",
-    "BodyMovin",
-    "Compression",
-    "CSS Latest",
-    "CSS Starter",
-    "Curl",
-    "ES6 Sets",
-    "ES6 Maps",
-    "Excel Column Separator",
-    "FFMPEG",
-    "Find",
-    "Fish Shell",
-    "FOUT",
-    "Gatsby Image",
-    "Gatsby Path Prefix",
-    "Gatsby SEO",
-    "Gatsby State Management",
-    "GIT",
-    "Gulp 4",
-    "Nunjucks",
-    "HTML5 Video",
-    "Image Optimization",
-    "JavaScript Randomness",
-    "macOS Wat Unlock Bug 🐛",
-    "macOS Host Files",
-    "NPM",
-    "Vector Content in PPT",
-    "CSS Print",
-    "Python 3",
-    "React Memo",
-    "React Router",
-    "rsync",
-    "Shell Scripting",
-    "SSH",
-    "SVG",
-    "Unix File Permissions",
-    "ViaWest Hosting",
-    "Wordpress Categories and Posts",
-    "Wordpress Custom Fields",
-    "Wordpress Functions",
-    "The WordPress Loop",
-    "Wordpress Theme Development",
-    "Yarn"
+    {
+      "title": "CSS",
+      "items": ["CSS Starter", "CSS Latest", "CSS Print", "FOUT"]
+    },
+    {
+      "title": "JavaScript",
+      "items": [
+        "JavaScript Randomness",
+        "ES6 Sets",
+        "ES6 Maps",
+        "Gatsby Image",
+        "Gatsby Path Prefix",
+        "Gatsby SEO",
+        "Gatsby State Management",
+        "React Memo",
+        "React Router",
+        "11ty",
+        "Gulp 4"
+      ]
+    },
+    {
+      "title": "HTML",
+      "items": ["HTML5 Video", "Nunjucks"]
+    },
+    {
+      "title": "Animation",
+      "items": ["BodyMovin"]
+    },
+    {
+      "title": "Command Line",
+      "items": [
+        "Apache",
+        "Compression",
+        "Curl",
+        "FFMPEG",
+        "Find",
+        "Fish Shell",
+        "rsync",
+        "Shell Scripting",
+        "NPM",
+        "SSH",
+        "Python 3",
+        "Yarn"
+      ]
+    },
+    {
+      "title": "Version Control",
+      "items": ["GIT"]
+    },
+    {
+      "title": "Office",
+      "items": ["Excel Column Separator", "Vector Content in PPT"]
+    },
+    {
+      "title": "OS",
+      "items": [
+        "macOS Wat Unlock Bug 🐛",
+        "macOS Host Files",
+        "Unix File Permissions"
+      ]
+    },
+    {
+      "title": "Wordpress",
+      "items": [
+        "Wordpress Categories and Posts",
+        "Wordpress Custom Fields",
+        "Wordpress Functions",
+        "The WordPress Loop",
+        "Wordpress Theme Development"
+      ]
+    },
+    {
+      "title": "Images",
+      "items": ["Image Optimization", "SVG"]
+    },
+    {
+      "title": "LMS / Hosting",
+      "items": ["Blackboard LMS", "ViaWest Hosting"]
+    }
   ]
 }
