@@ -28,9 +28,6 @@ const Nav = () => {
       <StyledNav className={navOpen ? 'is-open' : ''}>
         <nav aria-label="Main">
           <ul>
-            <li>
-              <Link href="/">Home</Link>
-            </li>
             {pages.map(page => (
               <li key={uuidv4()}>
                 {page.title}

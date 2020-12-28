@@ -1,11 +1,8 @@
 import { Layout } from '../components/'
 
 export const meta = {
-  path: '/git',
   date: '2020-05-03',
   title: 'GIT',
-  titleSlug: 'git',
-  thumbnail: 'git.svg',
 }
 
 - [Settings](#settings)
@@ -27,7 +24,7 @@ export const meta = {
 - [Log](#log)
 - [References](#references)
 
-## Settings
+<h2 id="settings">Settings</h2>
 
 The first thing you should do when you install Git is to set your user name and e-mail address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you pass around:
 
@@ -36,7 +33,7 @@ git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
 
-### Command Alias
+<h3 id="comman-alias">Command Alias</h3>
 
 ```bash
 git config --global alias.shortcut command
@@ -46,7 +43,7 @@ git config --global alias.st status
 git config --global alias.ci commit
 ```
 
-### Checking Your Settings
+<h3 id="checking-your-settings">Checking Your Settings</h3>
 
 If you want to check your settings, you can use the git config –list command to list all the settings Git can find at that point:
 
@@ -60,7 +57,7 @@ git config --list
   color.diff=auto
 ```
 
-## Ignore Files
+<h2 id="ignore-files">Ignore Files</h2>
 
 Add a .gitignore file to the root of your project. Below is a starter file:
 
@@ -109,7 +106,7 @@ Thumbs.db
 node_modules
 ```
 
-## Branching and Merging
+<h2 id="branching-and-merging">Branching and Merging</h2>
 
 ```bash
 git checkout -b iss53
@@ -241,7 +238,9 @@ Merge a branch –dry-run
 git merge --no-commit --no-ff branchtomergein
 ```
 
-### Remove, Reset and Rollback Commits
+<h3 id="remove-reset-and-rollback-commits">
+  Remove, Reset and Rollback Commits
+</h3>
 
 Use `git log` to see the most recent commits. Let's say you want to rever the last three commits:
 
@@ -273,9 +272,11 @@ git revert d3f1a8..master
 
 Optionally specify the `--no-commit` option to see what's being reverted.
 
-## Forks
+<h2 id="forks">Forks</h2>
 
-### Configuring a remote fork (upstream)
+<h3 id="configuring-a-remote-fork-upstream">
+  Configuring a remote fork (upstream)
+</h3>
 
 To sync changes you make in a fork with the original repository, you must configure a remote that points to the upstream repository in Git.
 
@@ -306,7 +307,7 @@ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.gi
 
 [reference](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
 
-### Syncing A Fork
+<h3 id="syncing-a-fork">Syncing A Fork</h3>
 
 1. Open Terminal (for Mac users) or the command prompt (for Windows and Linux users).
 2. Change the current working directory to your local project.
@@ -354,7 +355,7 @@ git merge upstream/master
 
 [reference](https://help.github.com/articles/syncing-a-fork/)
 
-## Push
+<h2 id="push">Push</h2>
 
 So let’s say you have checked out a new branch, committed some awesome changes, but now you need to share this branch though with another developer. You can push the branch up to a remote very simply:
 
@@ -374,7 +375,7 @@ Push all branches at once
 git push --all origin
 ```
 
-## Stash
+<h2 id="stash">Stash</h2>
 
 Now you want to switch branches, but you don’t want to commit what you’ve been working on yet; so you’ll stash the changes. To push a new stash onto your stack, run `git stash`.
 
@@ -419,7 +420,7 @@ Or delete all of the stored stashes with:
 git stash clear
 ```
 
-## Remote
+<h2 id="remote">Remote</h2>
 
 Remote show
 
@@ -465,7 +466,9 @@ Seeing which local branches are tracking a remote branch
 git remote show origin
 ```
 
-### Merging an upstream repository into your fork
+<h3 id="merging-an-upstream-repository-into-your-fork">
+  Merging an upstream repository into your fork
+</h3>
 
 1. Open Terminal.
 2. Change the current working directory to your local project.
@@ -492,7 +495,7 @@ git remote show origin
 
 [GitHub reference](https://help.github.com/articles/merging-an-upstream-repository-into-your-fork/)
 
-## Show
+<h2 id="show">Show</h2>
 
 Show a file from a different branch without checking it out
 
@@ -521,7 +524,7 @@ git show 7da184bbb00c094e08df8714604fa273e51cf4fa:./src/pages/filename.html
 git show 7da184bbb00c094e08df8714604fa273e51cf4fa:./src/pages/filename.html ~/Desktop/myfile.html
 ```
 
-## Conflicts
+<h2 id="conflicts">Conflicts</h2>
 
 List the conflicted files in git
 
@@ -529,7 +532,7 @@ List the conflicted files in git
 git ls-files -u
 ```
 
-## Reset
+<h2 id="reset">Reset</h2>
 
 ```bash
 git checkout -f
@@ -547,7 +550,7 @@ git clean -f -d .
 git clean -f -x .
 ```
 
-## Log
+<h2 id="log">Log</h2>
 
 ```bash
 git log
@@ -669,7 +672,7 @@ Use the `gitk` command to review the history of a specific document using the Wi
 gitk [filename]
 ```
 
-## Tags
+<h2 id="tags">Tags</h2>
 
 Git has three different type of tags:
 
@@ -679,7 +682,7 @@ Git has three different type of tags:
 
 Let’s start with lightweight tags.
 
-### Lightweight tags
+<h3 id="lightweight-tags">Lightweight tags</h3>
 
 In the previous cheat sheet only the lightweight local tags were discussed. A lightweight tag is nothing more than a reference to a particular revision or SHA1 object name in the repository. This kind of tag is quick and easy and very usable for local development to mark places in your commit history.
 
@@ -695,7 +698,7 @@ Viewing available tags is done with -l:
 git tag -l
 ```
 
-### Annotated tags
+<h3 id="annotated-tags">Annotated tags</h3>
 
 Annotated tags are almost like lightweight tags, the big difference is that they contain a message. Normally this message indicated why this tag is interesting. Use the -a option to create an annotated tag.
 
@@ -717,7 +720,7 @@ git tag -l -n1
 
 This will not only show the messages for the annotated tags, it will also show the commit message of the revisions tagged with lightweight tags as well.
 
-### Signed tags
+<h3 id="signed-tags">Signed tags</h3>
 
 Signed tags take annotated tags a step further, they include an OpenPG signature to provide trust. While gits SHA1 tags provide integrity for the repository, the OpenPG signature makes sure that a trustworthy person created the tag.
 
@@ -735,7 +738,7 @@ To verify a signed tag you can run the following:
 git tag -v v2.0
 ```
 
-### Deleting tags
+<h3 id="deleting-tags">Deleting tags</h3>
 
 There are times when you want to remove tags as well. This quite easy:
 
@@ -749,7 +752,7 @@ To remove a tag on a remote repository, you should do a special push:
 git push origin :refs/tags/tag_name
 ```
 
-### Pushing tags
+<h3 id="pushing-tags">Pushing tags</h3>
 
 To push your tags to a remote repository, use the following command to push all tags:
 
@@ -757,7 +760,7 @@ To push your tags to a remote repository, use the following command to push all 
 git push origin --tags
 ```
 
-]## Pruning
+<h2 id="pruning">Pruning</h2>
 
 ```bash
 git remote show origin
@@ -779,7 +782,7 @@ git remote prune origin
 
 Use the –dry-run flag to review what will be pruned.
 
-## Cleanup
+<h2 id="cleanup">Cleanup</h2>
 
 ```bash
 git gc
@@ -789,7 +792,7 @@ Runs a number of housekeeping tasks within the current repository, such as compr
 
 Users are encouraged to run this task on a regular basis within each repository to maintain good disk space utilization and good operating performance.
 
-## References
+<h2 id="references">References</h2>
 
 - [First Aid Git](http://ricardofilipe.com/projects/firstaidgit/#/)
 - [http://philsinatra.net/blog/git/](http://philsinatra.net/blog/git/)

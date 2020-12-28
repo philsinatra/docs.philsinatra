@@ -1,7 +1,9 @@
 TODO:
-  ✔ move contents to `src` directory @done(20-12-21 16:28)
-  ☐ create pages
-  ✔ slugify links @done(20-12-23 09:03)
+  ☐ clean all page content
+  ☐ format main content
+  ☐ setup META and HEAD components
+  ☐ setup favicons
+  ☐ document Button/Typescript example
   ☐ clean github gists
 
 LINKS:
@@ -10,8 +12,12 @@ LINKS:
   ☐ [fix TSX prettier](https://github.com/microsoft/vscode/issues/108447#issuecomment-707236252)
   ☐ https://www.carlrippon.com/react-context-with-typescript-p2/
 
-Example Code:
+Archive:
+  ✔ move contents to `src` directory @done(20-12-21 16:28) @project(TODO)
+  ✔ create pages @done(20-12-23 11:37) @project(TODO)
+  ✔ slugify links @done(20-12-23 09:03) @project(TODO)
 
+Other:
   import React, { ButtonHTMLAttributes, FunctionComponent } from 'react';
 
   interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {

@@ -81,6 +81,9 @@ const GlobalStyles = createGlobalStyle`
     --secondary-background: var(--color-gray-900);
     --secondary-foreground: var(--color-gray-50);
     --highlight: hsla(0, 0%, 78%, .350);
+    --link: var(--color-blue-400);
+    --visited: var(--color-purple-500);
+    --hover: var(--color-green-400);
 
     @media screen and (prefers-color-scheme: dark) {
       --primary-background: var(--color-gray-75);

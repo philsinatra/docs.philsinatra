@@ -1,14 +1,9 @@
 import { Layout } from '../components/'
 
 export const meta = {
-  path: '/compression',
   date: '2020-04-30',
   title: 'Cross Platform Compression',
-  titleSlug: 'cross-platform-compression',
-  thumbnail: 'zip.svg',
 }
-
-Here are some helpful commands when working with file compression.
 
 ## `.zip` Format
 
@@ -79,7 +74,7 @@ The `e` option stands for _encryption_ the `j` for _junk the path_ (otherwise th
 
 To compress a folder:
 
-```bash{numberLines: true}
+```bash
 tar -cvzf archive_name.tar.gz folder\_to\_compress
 
 # Compress only JPG files (example)
@@ -100,7 +95,7 @@ tar -C /myfolder -xvf yourfile.tar
 
 ## `tar.bz2` Format
 
-```bash{numberLines: true}
+```bash
 # to compress
 tar -jcvf archive_name.tar.bz2 folder_to_compress
 

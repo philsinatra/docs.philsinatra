@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 import { useLockBodyScroll } from '../hooks'
@@ -8,6 +9,11 @@ const Shroud = ({ open, setOpen }) => {
   return (
     <StyledShroud hidden={open ? false : true} onClick={() => setOpen(false)} />
   )
+}
+
+Shroud.propTypes = {
+  open: PropTypes.bool,
+  setOpen: PropTypes.func,
 }
 
 const StyledShroud = styled.div`

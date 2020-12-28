@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Main, Nav } from './'
 import { Header } from './'
 
-const Layout = ({ children }) => {
+const Layout = ({ meta, children }) => {
   useEffect(() => {
     if (typeof window !== undefined) Prism.highlightAll()
   }, [])
@@ -14,7 +14,13 @@ const Layout = ({ children }) => {
       <Wrapper>
         <Header />
         <Nav />
-        <Main>{children}</Main>
+        <Main>
+          <h1 style={{ marginBottom: '0' }}>{meta.title}</h1>
+          <p style={{ marginTop: '0' }}>
+            <small>Last updated: {meta.date}</small>
+          </p>
+          {children}
+        </Main>
       </Wrapper>
     </>
   )

@@ -1,14 +1,13 @@
 import { Layout } from '../components/'
 
 export const meta = {
-  path: '/gatsbyjs-state-management',
   date: '2020-09-02',
-  title: 'State Management in Gatsby using the wrapRootElement Hook',
-  titleSlug: 'gatsbyjs-state-management',
-  thumbnail: 'gatsbyjs.svg',
+  title: 'State Management in Gatsby',
 }
 
-## Wrapping with Provider
+## Using the `wrapRootElement` Hook
+
+### Wrapping with Provider
 
 The first step is to setup our context provider with a simple `isDark` state and a method to reverse its current state. We’ll take whatever is passed-in as props and wrap it in our new `myContext.Provider`.
 
@@ -49,7 +48,7 @@ import Provider from './src/state/provider'
 export const wrapRootElement = Provider
 ```
 
-## Application
+### Application
 
 The global state can now be accessed in both layout templates, and page files. Wrap the `Consumer` around only the elements that need access to the state to avoid unnecessary re-renders.
 

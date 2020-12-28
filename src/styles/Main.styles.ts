@@ -10,6 +10,29 @@ const StyledMain = styled.main`
   padding-top: 6rem;
   width: 100vw;
 
+  a {
+    color: var(--link);
+    transition: color var(--duration-100) ease-in-out;
+
+    &:visited {
+      color: var(--visited);
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--hover);
+    }
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    a {
+      &:hover,
+      &:focus {
+        outline: 2px dotted white;
+      }
+    }
+  }
+
   .wrapper {
     line-height: 1.4;
     margin: 0 auto;

@@ -1,0 +1,33 @@
+import { Layout } from '../components/'
+
+export const meta = {
+  title: 'Svelte Lint Configuration',
+  author: 'Phil Sinatra',
+  path: '/svelte-lint-configuration',
+  date: '2020-12-28',
+}
+
+## `.prettierrc`
+
+```json
+{
+  "arrowParens": "avoid",
+  "semi": false,
+  "singleQuote": true,
+  "svelteSortOrder": "styles-scripts-markup",
+  "svelteStrictMode": false,
+  "svelteBracketNewLine": true,
+  "svelteAllowShorthand": true,
+  "plugins": ["prettier-plugin-svelte"]
+}
+```
+
+## VSCode Preferences JSON
+
+```json
+"[svelte]": {
+  "editor.defaultFormatter": "svelte.svelte-vscode"
+}
+```
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>

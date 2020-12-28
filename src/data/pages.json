@@ -10,19 +10,29 @@
         "JavaScript Randomness",
         "ES6 Sets",
         "ES6 Maps",
-        "Gatsby Image",
-        "Gatsby Path Prefix",
-        "Gatsby SEO",
-        "Gatsby State Management",
-        "React Memo",
-        "React Router",
+        "Gulp Nunjucks",
         "11ty",
         "Gulp 4"
       ]
     },
     {
+      "title": "React",
+      "items": [
+        "Gatsby Image",
+        "Gatsby Path Prefix",
+        "Gatsby SEO",
+        "Gatsby State Management",
+        "React Memo",
+        "React Router"
+      ]
+    },
+    {
+      "title": "Svelte",
+      "items": ["Svelte Lint Configuration"]
+    },
+    {
       "title": "HTML",
-      "items": ["HTML5 Video", "Gulp Nunjucks"]
+      "items": ["HTML5 Video"]
     },
     {
       "title": "Animation",
@@ -45,6 +55,11 @@
         "Yarn"
       ]
     },
+
+    {
+      "title": "Images",
+      "items": ["Image Optimization", "SVG"]
+    },
     {
       "title": "Version Control",
       "items": ["GIT"]
@@ -56,8 +71,8 @@
     {
       "title": "OS",
       "items": [
-        "macOS Watch Pair Bug",
         "macOS Host Files",
+        "macOS Watch Pair Bug",
         "Unix File Permissions"
       ]
     },
@@ -70,10 +85,6 @@
         "The WordPress Loop",
         "Wordpress Theme Development"
       ]
-    },
-    {
-      "title": "Images",
-      "items": ["Image Optimization", "SVG"]
     },
     {
       "title": "LMS / Hosting",

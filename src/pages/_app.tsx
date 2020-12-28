@@ -3,11 +3,13 @@ import '../styles/prism.css'
 import type { AppProps } from 'next/app'
 import { AppProvider } from '../state'
 import GlobalStyles from '../styles/GlobalStyles'
+import Typography from '../styles/Typography'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <AppProvider>
       <GlobalStyles />
+      <Typography />
       <Component {...pageProps} />
     </AppProvider>
   )
