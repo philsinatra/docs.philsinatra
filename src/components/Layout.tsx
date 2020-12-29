@@ -1,8 +1,7 @@
 import Prism from 'prismjs'
-import React, { useEffect } from 'react'
+import React, { ReactNode, useEffect } from 'react'
 import styled from 'styled-components'
-import { Main, Nav } from './'
-import { Header } from './'
+import { Header, Main, Nav, SEO } from './'
 
 const Layout = ({ meta, children }) => {
   useEffect(() => {
@@ -11,6 +10,7 @@ const Layout = ({ meta, children }) => {
 
   return (
     <>
+      <SEO title={meta.title} />
       <Wrapper>
         <Header />
         <Nav />

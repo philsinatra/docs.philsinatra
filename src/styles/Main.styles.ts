@@ -7,6 +7,7 @@ const StyledMain = styled.main`
   display: flex;
   justify-content: flex-start;
   min-height: 100vh;
+  padding-bottom: 3rem;
   padding-top: 6rem;
   width: 100vw;
 

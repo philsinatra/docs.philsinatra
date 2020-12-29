@@ -1,6 +1,11 @@
 TODO:
-  ☐ clean all page content
-  ☐ format main content
+  ☐ iOS styles debug
+  ☐ GitHub icon
+  ☐ archive Gatsby version
+  ☐ clean Gatsby version from local hard drive
+  ☐ Document NEXTJS prefix
+  ✔ clean all page content @done(20-12-28 15:53)
+  ✔ format main content @done(20-12-28 15:53)
   ☐ setup META and HEAD components
   ☐ setup favicons
   ☐ document Button/Typescript example

@@ -95,6 +95,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
+    background-color: var(--primary-background);
     box-sizing: border-box;
     font-size: 100%;
 
@@ -116,7 +117,7 @@ const GlobalStyles = createGlobalStyle`
     background-color: var(--primary-background);
     color: var(--primary-foreground);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    /* padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); */
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   }
 
   a {
