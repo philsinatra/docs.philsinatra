@@ -2,6 +2,7 @@ import Prism from 'prismjs'
 import React, { ReactNode, useEffect } from 'react'
 import styled from 'styled-components'
 import { Header, Main, Nav, SEO } from './'
+import GitHubIcon from './GitHubIcon'
 
 const Layout = ({ meta, children }) => {
   useEffect(() => {
@@ -12,6 +13,7 @@ const Layout = ({ meta, children }) => {
     <>
       <SEO title={meta.title} />
       <Wrapper>
+        <GitHubIcon />
         <Header />
         <Nav />
         <Main>

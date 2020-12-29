@@ -38,9 +38,12 @@ const StyledMain = styled.main`
     line-height: 1.4;
     margin: 0 auto;
     max-width: 85ch;
-    padding: 0 3rem;
+    padding: 0 1.5rem;
     width: 100%;
 
+    @media screen and (min-width: 37.5em) {
+      padding: 0 3rem;
+    }
     @media screen and (min-width: 64em) {
       margin: 0 0 0 40vw;
     }
