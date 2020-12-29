@@ -50,6 +50,10 @@ const GitHubIcon = () => {
 const StyledIcon = styled.div`
   &.dim {
     display: none;
+
+    @media screen and (min-width: 64em) {
+      display: block;
+    }
   }
 
   .github-corner {

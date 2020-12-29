@@ -1,10 +1,6 @@
 {
   "pages": [
     {
-      "title": "CSS",
-      "items": ["CSS Starter", "CSS Latest", "CSS Print", "FOUT"]
-    },
-    {
       "title": "JavaScript",
       "items": [
         "JavaScript Randomness",
@@ -18,6 +14,7 @@
     {
       "title": "React",
       "items": [
+        "NextJS Config",
         "Gatsby Image",
         "Gatsby Path Prefix",
         "Gatsby SEO",
@@ -25,18 +22,6 @@
         "React Memo",
         "React Router"
       ]
-    },
-    {
-      "title": "Svelte",
-      "items": ["Svelte Lint Configuration"]
-    },
-    {
-      "title": "HTML",
-      "items": ["HTML5 Video"]
-    },
-    {
-      "title": "Animation",
-      "items": ["BodyMovin"]
     },
     {
       "title": "Command Line",
@@ -55,14 +40,33 @@
         "Yarn"
       ]
     },
-
+    {
+      "title": "Version Control",
+      "items": ["GIT"]
+    },
+    {
+      "title": "CSS",
+      "items": ["CSS Starter", "CSS Latest", "CSS Print", "FOUT"]
+    },
+    {
+      "title": "HTML",
+      "items": ["HTML5 Video"]
+    },
+    {
+      "title": "Svelte",
+      "items": ["Svelte Lint Configuration"]
+    },
+    {
+      "title": "Typescript",
+      "items": ["Typescript Button Study"]
+    },
     {
       "title": "Images",
       "items": ["Image Optimization", "SVG"]
     },
     {
-      "title": "Version Control",
-      "items": ["GIT"]
+      "title": "Animation",
+      "items": ["BodyMovin"]
     },
     {
       "title": "Office",

@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <StyledHeader>
       <button onClick={() => setNavOpen(true)}>
-        <Icon icon={menuIcon} style={{ fontSize: '36px' }} />
+        <Icon icon={menuIcon} style={{ fontSize: '24px' }} />
       </button>
     </StyledHeader>
   )
@@ -38,9 +38,11 @@ const StyledHeader = styled.header`
     align-items: center;
     background-color: transparent;
     border: 0;
+    color: var(--color-white);
     display: flex;
     height: 2rem;
     justify-content: center;
+    padding: 0;
     transition: background-color var(--duration-100) ease-in-out;
     width: 2rem;
 
@@ -51,11 +53,6 @@ const StyledHeader = styled.header`
 
     &:focus {
       background-color: var(--highlight);
-    }
-
-    svg {
-      color: var(--primary-foreground);
-      transform: scale(1.2);
     }
   }
 `

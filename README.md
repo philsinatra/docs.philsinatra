@@ -1,3 +1,5 @@
+# Phil's Notes
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -28,3 +30,10 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Typescript References
+
+- [Fix TSX Prettier](https://github.com/microsoft/vscode/issues/108447#issuecomment-707236252)
+- [https://nextjs.org/docs/basic-features/typescript#custom-app](https://nextjs.org/docs/basic-features/typescript#custom-app)
+- [https://medium.com/swlh/create-a-killer-frontend-for-2020-setup-next-js-graphql-styled-components-typescript-and-ssr-fe66cffd7d94](https://medium.com/swlh/create-a-killer-frontend-for-2020-setup-next-js-graphql-styled-components-typescript-and-ssr-fe66cffd7d94)
+- [https://www.carlrippon.com/react-context-with-typescript-p2/](https://www.carlrippon.com/react-context-with-typescript-p2/)

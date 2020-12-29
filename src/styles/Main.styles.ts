@@ -11,6 +11,11 @@ const StyledMain = styled.main`
   padding-top: 6rem;
   width: 100vw;
 
+  @media screen and (min-width: 64em) {
+    margin: 0 auto 0 30vw;
+    width: 70vw;
+  }
+
   a {
     color: var(--link);
     transition: color var(--duration-100) ease-in-out;
@@ -43,9 +48,6 @@ const StyledMain = styled.main`
 
     @media screen and (min-width: 37.5em) {
       padding: 0 3rem;
-    }
-    @media screen and (min-width: 64em) {
-      margin: 0 0 0 40vw;
     }
   }
 `

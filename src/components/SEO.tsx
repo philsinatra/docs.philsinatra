@@ -12,7 +12,6 @@ const SEO = ({ description, title, url }: SeoProps) => {
   const router = useRouter()
   const siteUrl = 'https://docs.philsinatra.com'
   const defaultTitle = "Phil's Notes"
-  // const defaultDescription = 'My notes about all things web dev!'
 
   const seo = {
     title: `${title} | ${defaultTitle}` || defaultTitle,

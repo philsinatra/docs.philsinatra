@@ -56,14 +56,16 @@ const GlobalStyles = createGlobalStyle`
     --color-black: #000;
     --color-gray-50: #080808;
     --color-gray-75: #1a1a1a;
-    --color-gray-100: #1e1e1e;
-    --color-gray-200: #2c2c2c;
+    --color-gray-100: #1b1c1e;
+    --color-gray-150: #1f1f1f;
+    --color-gray-200: #2b2b2b;
     --color-gray-300: #393939;
     --color-gray-400: #494949;
     --color-gray-500: #5c5c5c;
     --color-gray-600: #7c7c7c;
     --color-gray-700: #a2a2a2;
     --color-gray-800: #c8c8c8;
+    --color-gray-850: #e5e5e5;
     --color-gray-900: #efefef;
     --color-gray-1000: #fafafa;
     --color-white: #fff;
@@ -76,9 +78,9 @@ const GlobalStyles = createGlobalStyle`
       0px 8px 10px 1px rgba(0, 0, 0, 0.14),
       0px 3px 14px 2px rgba(0, 0, 0, 0.12);
 
-    --primary-background: var(--color-gray-1000);
+    --primary-background: var(--color-gray-900);
     --primary-foreground: var(--color-gray-50);
-    --secondary-background: var(--color-gray-900);
+    --secondary-background: var(--color-gray-850);
     --secondary-foreground: var(--color-gray-50);
     --highlight: hsla(0, 0%, 78%, .350);
     --link: var(--color-blue-400);
@@ -86,9 +88,9 @@ const GlobalStyles = createGlobalStyle`
     --hover: var(--color-green-400);
 
     @media screen and (prefers-color-scheme: dark) {
-      --primary-background: var(--color-gray-75);
+      --primary-background: var(--color-gray-100);
       --primary-foreground: var(--color-gray-900);
-      --secondary-background: var(--color-gray-100);
+      --secondary-background: var(--color-gray-150);
       --secondary-foreground: var(--color-gray-900);
       --highlight: var(--color-gray-200);
     }
