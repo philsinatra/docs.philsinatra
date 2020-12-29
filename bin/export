@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+
+cd ${0%/*}
+./clean
+node ../scripts/genPathMap.js
+yarn build
+yarn export
