@@ -1,10 +1,13 @@
-import { Figure, Layout } from '../components/'
+import { ClampCSS, Figure, Layout, MaxCSS, MinCSS } from '../components/'
 
 export const meta = {
   date: '2020-08-26',
   title: 'The Latest in CSS',
 }
 
+- [`min()` Function](#min-func)
+- [`max()` Function](#max-func)
+- [`clamp()` Function](#clamp-func)
 - [`light-level`](#light-level)
 - [`inverted-colors`](#inverted-colors)
 - [`prefers-color-scheme`](#prefers-color-scheme)
@@ -20,6 +23,48 @@ export const meta = {
 - [Reducing the Render-blocking time](#reducing-the-render-blocking-time)
 - [Avoiding `@import` to include multiple stylesheets](#avoiding-import-to-include-multiple-stylesheets)
 - [References](#references)
+
+<h2 id="min-func">`min()` Function</h2>
+
+The `min()` function contains one or more comma-separated calculations and represents the smallest value of them. We use the `min()` to set a maximum value.
+
+Consider the following example. We want the element to have a maximum width of `500px`.
+
+<MinCSS />
+
+The browser has to choose the smallest of the values `(50%, 500px)`. Choosing that depends on the viewport width. If `50%` computes to a value more than `500px`, then it will be ignored and `500px` will be used instead.
+
+Otherwise, if the `50%` computes to a value less than `500px`, then the `50%` will be used as a value for the width. Can you guess the viewport width that will make that happen? (The 50% of X = 500px). The viewport width is `1000px`.
+
+<h2 id="max-func">`max()` Function</h2>
+
+The `max()` function contains one or more comma-separated calculations and represents the largest value of them. We use the `max()` to set a minimum value.
+
+Consider the following example. We want the element to have a minimum width of `300px`.
+
+<MaxCSS />
+
+The browser has to choose the largest of the values (`50%`, `300px`). Choosing that depends on the viewport width. If `50%` computes to a value less than `300px`, then it will be ignored and `300px` will be used.
+
+Otherwise, if the `50%` computes to a value more than `300px`, then the `50%` will be used as a value for the width. It’s the opposite of `min()` function.
+
+<h2 id="clamp-func">`clamp()` Function</h2>
+
+What `clamp()` do is that it clamps a value between two defined values, minimum and maximum. It takes three parameters (min value, preferred value, max value).
+
+Consider the following example.
+
+<ClampCSS />
+
+We have an element with a minimum width of `200px`, a preferred value of `50%`, and a maximum value of `1000px`. Let’s visualize that!
+
+Here is a recap for the example above:
+
+- The width will never go below `200px`
+- The central (preferred) value is `50%` and will only work if the viewport width is greater than 400px and less than 2000px.
+- The width won’t go above `1000px`
+
+The `clamp()` is similar to the physical tool we have. It clamps a value based on two provided values at the edges (`min`, `max`).
 
 <h2 id="light-level">`light-level`</h2>
 
