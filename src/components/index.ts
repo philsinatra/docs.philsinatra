@@ -1,3 +1,4 @@
+import ButtonToggleExample from './ButtonToggleExample'
 import ClampCSS from './ClampCSS'
 import Figure from './Figure'
 import GitHubIcon from './GitHubIcon'
@@ -11,6 +12,7 @@ import SEO from './SEO'
 import Shroud from './Shroud'
 
 export {
+  ButtonToggleExample,
   ClampCSS,
   Figure,
   GitHubIcon,

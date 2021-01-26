@@ -1,8 +1,9 @@
-import Prism from 'prismjs'
-import React, { ReactNode, useEffect } from 'react'
-import styled from 'styled-components'
 import { Header, Main, Nav, SEO } from './'
+import React, { useEffect } from 'react'
+
 import GitHubIcon from './GitHubIcon'
+import Prism from 'prismjs'
+import styled from 'styled-components'
 
 const Layout = ({ meta, children }) => {
   useEffect(() => {
