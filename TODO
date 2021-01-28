@@ -1,9 +1,9 @@
 TODO:
-  ☐ archive Gatsby version
-  ☐ clean Gatsby version from local hard drive
   ☐ clean github gists
 
 Archive:
+  ✔ archive Gatsby version @done(21-01-28 12:21) @project(TODO)
+  ✔ clean Gatsby version from local hard drive @done(21-01-28 12:21) @project(TODO)
   ✔ iOS styles debug @done(20-12-29 13:28) @project(TODO)
   ✔ icon lines not showing @done(20-12-29 13:28) @project(TODO)
   ✔ menu open on load @done(20-12-29 12:42) @project(TODO)
