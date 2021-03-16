@@ -1,0 +1,34 @@
+import { Layout } from '../components/'
+
+export const meta = {
+  date: '2021-03-16',
+  title: 'Floating Footer Fix',
+}
+
+If the **height of the footer is unknown**, it's best to use flex:
+
+```html
+<body>
+  <header></header>
+  <main></main>
+  <footer></footer>
+</body>
+```
+
+```css
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.content {
+  flex: 1;
+}
+```
+
+<h2 id="references">References</h2>
+
+- Footer below content, but not floating mid-air if not enough content. (2014,
+  September 4). Stack Overflow. [StackOverflow](https://stackoverflow.com/questions/25671073/footer-below-content-but-not-floating-mid-air-if-not-enough-content/#answer-48479240)
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>

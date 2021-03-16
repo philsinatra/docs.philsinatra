@@ -49,7 +49,13 @@
     },
     {
       "title": "CSS",
-      "items": ["CSS Starter", "CSS Latest", "CSS Print", "FOUT"]
+      "items": [
+        "CSS Floating Footer",
+        "CSS Latest",
+        "CSS Print",
+        "CSS Starter",
+        "FOUT"
+      ]
     },
     {
       "title": "HTML",
