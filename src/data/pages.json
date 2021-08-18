@@ -102,6 +102,10 @@
     {
       "title": "LMS / Hosting",
       "items": ["Blackboard", "ViaWest Hosting"]
+    },
+    {
+      "title": "EDI vs API",
+      "items": ["EDI API"]
     }
   ]
 }
